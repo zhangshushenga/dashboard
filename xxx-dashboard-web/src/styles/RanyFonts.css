@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Rany';
+  src: url('../assets/RanyFonts/Rany.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rany-Bold';
+    src: url('../assets/RanyFonts/Rany-Bold.otf')format('truetype');
+}
+
+@font-face {
+    font-family: 'Rany-Medium';
+    src: url('../assets/RanyFonts/Rany-Medium.otf')format('truetype');
+}

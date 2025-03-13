@@ -1,0 +1,128 @@
+/*
+样式1：
+*灰底儿黑字(正常)
+*灰底儿黑字(禁用)
+*/
+.button-style1 {
+    color: #000000;
+    background-color: #E7E7E7;
+    border-color: #E7E7E7;
+}
+
+.button-style1:hover {
+    color: #000000;
+    background-color: #E7E7E7;
+    border-color: #E7E7E7;
+}
+
+.button-style1:focus {
+    color: #000000;
+    background-color: #E7E7E7;
+    border-color: #E7E7E7;
+}
+
+.button-style1.is-disabled {
+    color: #000000;
+    background-color: #E7E7E7;
+    border-color: #E7E7E7;
+}
+
+.button-style1.is-disabled:hover {
+    color: #000000;
+    background-color: #E7E7E7;
+    border-color: #E7E7E7;
+}
+
+
+/*
+*样式2:
+*蓝底儿白字(正常)
+*无禁用状态
+*/
+.button-style2 {
+    color: #fff;
+    background-color: #0052D9;
+    border-color: #0052D9;
+}
+
+.button-style2:hover {
+    color: #fff;
+    background-color: #0052D9;
+    border-color: #0052D9;
+}
+
+.button-style2:focus {
+    color: #fff;
+    background-color: #0052D9;
+    border-color: #0052D9;
+}
+
+/*
+*样式3:
+*蓝底儿白字(正常)
+*灰底儿黑字(禁用)
+*/
+.button-style3 {
+    color: #fff;
+    background-color: #0052D9;
+    border-color: #0052D9;
+}
+
+.button-style3:hover {
+    color: #fff;
+    background-color: #0052D9;
+    border-color: #0052D9;
+}
+
+.button-style3:focus {
+    color: #fff;
+    background-color: #0052D9;
+    border-color: #0052D9;
+}
+
+.button-style3.is-disabled {
+    color: #000000;
+    background-color: #E7E7E7;
+    border-color: #E7E7E7;
+}
+
+.button-style3.is-disabled:hover {
+    color: #000000;
+    background-color: #E7E7E7;
+    border-color: #E7E7E7;
+}
+
+/*
+*样式4:
+*蓝底儿白字(正常)
+*蓝底儿白字(禁用)
+*/
+.button-style4 {
+    color: #fff;
+    background-color: #0052D9;
+    border-color: #0052D9;
+}
+
+.button-style4:hover {
+    color: #fff;
+    background-color: #0052D9;
+    border-color: #0052D9;
+}
+
+.button-style4:focus {
+    color: #fff;
+    background-color: #0052D9;
+    border-color: #0052D9;
+}
+
+.button-style4.is-disabled {
+    color: #fff;
+    background-color: #B5C7FF;
+    border-color: #E7E7E7;
+}
+
+.button-style4.is-disabled:hover {
+    color: #fff;
+    background-color: #B5C7FF;
+    border-color: #E7E7E7;
+}

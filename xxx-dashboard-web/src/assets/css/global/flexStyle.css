@@ -1,0 +1,14 @@
+/*
+*横向布局
+*/
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+/*
+*纵向布局
+*/
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
