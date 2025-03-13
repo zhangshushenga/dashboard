@@ -1,13 +1,34 @@
 <template>
   <div class="agent-rank">
-    <div class="title" @click="handleTitleClick">Agent排行榜</div>
-    <div class="ranking-list"></div>
+    <div class="background-overlay"></div>
+    <div class="container">
+      <div class="ranking-header">
+        <h1 class="title" @click="handleTitleClick">Agent排行榜</h1>
+      </div>
+      <div class="header">
+        <div class="header-rank">排名</div>
+        <div class="header-name">Agent名称</div>
+        <div class="header-members">团队成员</div>
+        <div class="header-score">综合得分</div>
+        <div class="header-stats">
+          <div class="header-stat">总订阅用户</div>
+          <div class="header-stat">当前订阅用户</div>
+          <div class="header-stat">30日新增用户</div>
+          <div class="header-stat">服务调用用户</div>
+          <div class="header-stat">复购用户</div>
+          <div class="header-stat">上线时间</div>
+        </div>
+      </div>
+      <div class="ranking-list">
+        <!-- 排行榜项目将通过JavaScript动态生成 -->
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import { onMounted } from 'vue';
-// import { fetchDailyStats, renderRanking, scheduleDailyUpdate } from '@/agentRank/js/agent-rank-app.js';
+import { fetchDailyStats, renderRanking, scheduleDailyUpdate } from '@/agentRank/js/agent-rank-app.js';
 
 export default {
   name: 'AgentRank',
@@ -18,7 +39,7 @@ export default {
     let clickCount = 0;
     let lastClickTime = 0;
     const CLICK_RESET_TIME = 2000; // 2秒内需要完成3次点击
-    const TARGET_URL = 'config.html';
+    const TARGET_URL = 'config-html.html';
 
     const handleTitleClick = () => {
       const currentTime = new Date().getTime();
@@ -55,7 +76,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+@import '../css/css-app.css';
+
+/* Additional component-specific styles if needed */
 .agent-rank {
   font-family: Arial, sans-serif;
   padding: 20px;
