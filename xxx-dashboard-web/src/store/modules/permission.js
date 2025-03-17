@@ -137,7 +137,8 @@ let menuMap = {
 }
 
 const atomMenuMap = {
-  'agent-rank': () => import('@/agentRank/components/agent-rank.vue'),
+  'agent-rank': () => import('@/views/atomStat/agent-rank.vue'),
+  'agent-rank-config': () => import('@/views/atomStat/agent-rank-config.vue'),
   'atom-device': () => import('@/views/atomStat/atom-device.vue'),
   'atom-users':  () => import('@/views/atomStat/atom-users'),
   'atom-SDCard':  () => import('@/views/atomStat/atom-SDCard'),
